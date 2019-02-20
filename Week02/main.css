@@ -1,0 +1,9 @@
+.container {
+    background-color: royalblue
+}
+
+@media(min-width: 768px) {
+    .container {
+        background-color: dodgerblue
+    }
+}
