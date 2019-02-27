@@ -1,0 +1,95 @@
+.container {
+    background-color: darkkhaki;
+}
+
+.red {
+    background-color: peru;
+}
+
+.green {
+    background-color: palegreen;
+}
+
+.blue {
+    background-color: mediumturquoise;
+}
+
+.yellow {
+    background-color: goldenrod;
+}
+
+.cyan {
+    background-color: aquamarine;
+}
+
+.purple {
+    background-color: mediumorchid;
+}
+
+.floater-section {
+    float: left;
+    width: 100%;
+    min-height:200px;
+    margin-bottom: 10px;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+/**********SMALL SCREEN**********/
+@media(min-width: 450px) {
+    .small-width-25 {
+        width: 25%;
+    }
+
+    .small-width-33 {
+        width: 33.333%;
+    }
+    
+    .small-width-50 {
+        width: 50%;
+    }
+
+    .small-width-100 {
+        width: 100%;
+    }
+}
+
+/**********MEDIUM SCREEN**********/
+@media(min-width: 768px) {
+    .medium-width-25 {
+        width: 25%;
+    }
+
+    .medium-width-33 {
+        width: 33.3333%;
+    }
+
+    .medium-width-50 {
+        width: 50%;
+    }
+
+    .medium-width-100 {
+        width: 100%;
+    }
+}
+
+/**********LARGE SCREEN**********/
+@media(min-width: 992px) {
+    .large-width-25 {
+        width: 25%;
+    }
+
+    .large-width-33 {
+        width: 33.333%;
+    }
+
+    .large-width-50 {
+        width: 50%;
+    }
+
+    .large-width-100 {
+        width: 100%;
+    }
+}
