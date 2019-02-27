@@ -60,7 +60,7 @@ a:active {
 }
 
 img {
-    display: inline-block;
+    display: block;
     margin: 10px;
 }
 
