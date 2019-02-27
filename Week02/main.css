@@ -10,6 +10,14 @@ body {
 
 h1 {
     font-family: 'Staatliches', cursive;
+    font-size: 32px;
+    margin: 10px;
+    padding-top: 5px;
+}
+
+h2 {
+    font-family: 'Staatliches', cursive;
+    font-size: 24;
     margin: 10px;
     padding-top: 5px;
 }
@@ -41,6 +49,51 @@ nav.navbar li {
 
 nav.navbar li:last-child {
     border-bottom: none;
+}
+
+a:hover {
+    background-color: white;
+}
+
+a:active {
+    background-color: black;
+}
+
+img {
+    display: inline-block;
+    margin: 10px;
+}
+
+p {
+    margin: 10px;
+    padding-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: darkslategray;
+}
+
+input[type=text], select, textarea {
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 6px;
+    margin: 10px;
+    margin-top: -15px;
+    align: center;
+}
+
+.contact p {
+    text-align: center;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 6px 50px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin:10px;
 }
 
 @media(min-width: 768px) {
@@ -92,5 +145,11 @@ nav.navbar li:last-child {
 
     nav.navbar a {
         color: cadetblue;
+    }
+
+    .container p{
+        -webkit-column-count: 2;
+           -moz-column-count: 2;
+                column-count: 2;
     }
 }
