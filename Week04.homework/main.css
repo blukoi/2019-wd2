@@ -109,7 +109,7 @@ h3 {
     font-size: 20;
     margin: 10px;
     color: rgb(113, 25, 196);
-    letter-spacing: .2em;
+    letter-spacing: .1em;
     background-color: white;
     text-align: center;
 }
@@ -136,6 +136,10 @@ img {
 
 .brewery {
     min-height: 500px;
+}
+
+.beer {
+    min-height: 300px;
 }
 
 .background-img {
