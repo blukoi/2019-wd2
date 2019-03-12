@@ -122,16 +122,27 @@ p {
     color: rgb(113, 25, 196);
 }
 
+a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: rgb(113, 25, 196);
+}
+
 img {
     float: left;
     width: 100%;
     height: auto;
 }
 
+.brewery {
+    min-height: 500px;
+}
+
 .background-img {
     position: relative;
     text-align: center;
     color: white;
+    padding: 5px;
 }
 
 .centeredtext {
