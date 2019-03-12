@@ -19,8 +19,8 @@ header {
 
 .navbar {
     float: left;
-    background-color: white;
     width: 100%;
+    background-color: white;
     padding: 5px 0px;
     margin-bottom: 10px;
 }
@@ -48,10 +48,18 @@ header {
     border-bottom: none;
 }
 
+a:hover {
+    background-color: white;
+}
+
+a:active {
+    background-color: black;
+}
+
 /*****Body Content*****/
 .content {
     padding: 0px 10px;
-    min-height: 450px;
+    min-height: 200px;
     border-bottom: 2px solid darkolivegreen;
     position: relative;
 }
@@ -66,26 +74,10 @@ header {
 
 h1 {
     font-family: 'Staatliches', cursive;
-    font-size: 40px;
+    font-size: 30px;
     margin: 10px;
     padding-top: 5px;
     color: rgb(113, 25, 196);
-}
-
-h1 .month {
-    text-align: center;
-    font-size: 24px;
-}
-
-h1 .day {
-    text-align: center;
-    font-size: 50px;
-}
-
-h1 .event-title {
-    text-align: left;
-    margin-left: 25px;
-    font-size: 50px;
 }
 
 .event p {
@@ -94,7 +86,9 @@ h1 .event-title {
 
 .date {
     background-color: dodgerblue;
+    text-align: center;
     color: rgb(70, 0, 0);
+    margin-right: 5%;
 }
 
 .event {
@@ -104,7 +98,7 @@ h1 .event-title {
 
 h2 {
     font-family: 'Staatliches', cursive;
-    font-size: 32px;
+    font-size: 25px;
     margin: 10px;
     padding-top: 5px;
     color: rgb(113, 25, 196);
@@ -112,7 +106,7 @@ h2 {
 
 h3 {
     font-family: 'Staatliches', cursive;
-    font-size: 24;
+    font-size: 20;
     margin: 10px;
     color: rgb(113, 25, 196);
     letter-spacing: .2em;
@@ -126,6 +120,18 @@ p {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: rgb(113, 25, 196);
+}
+
+img {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.background-img {
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
 .centeredtext {
@@ -162,6 +168,18 @@ p {
 
     .navbar a {
         color: white;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 30px;
     }
 }
 
