@@ -1,0 +1,43 @@
+.content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.vertical-horizontal h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.red {
+    background-color: peru;
+}
+
+.green {
+    background-color: palegreen;
+}
+
+.blue {
+    background-color: mediumturquoise;
+}
+
+.yellow {
+    background-color: goldenrod;
+}
+
+.cyan {
+    background-color: aquamarine;
+}
+
+.purple {
+    background-color: mediumorchid;
+}
+
+img {
+    display: inline-block;
+}
+
+p {
+    vertical-align: middle;
+}
