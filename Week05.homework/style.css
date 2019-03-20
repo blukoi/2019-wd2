@@ -4,6 +4,8 @@ body {
 
 header {
     text-align: center;
+    background-color: black;
+    margin: 25px 0px;
 }
 
 header.floater-section {
@@ -12,17 +14,24 @@ header.floater-section {
 
 .relative {
     position: relative;
+    overflow: hidden;
 }
 
-.relative h1 {
+header div {
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.relative img {
     position: absolute;
     margin: 0;
     color: black;
     background-color: white;
-    padding: 10px 25px;
-    top: 100px;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    margin: -128px 0 0 -128px;
 }
 
 .content-article {
@@ -110,7 +119,7 @@ p {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
