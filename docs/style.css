@@ -1,0 +1,126 @@
+body {
+    background-color: black;
+}
+
+header {
+    text-align: center;
+    background-color: black;
+    margin: 25px 0px;
+}
+
+header.floater-section {
+    min-height: 200px;
+}
+
+.relative {
+    position: relative;
+    overflow: hidden;
+}
+
+header div {
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.relative img {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin: -128px 0 0 -128px;
+}
+
+.content-article {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    color: black;
+    width: 90%;
+    margin: 0px 5%;
+}
+
+.background-img h2 {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform:  translate(-50%,-50%);
+    color: white;
+    text-shadow: 0px 2px black;
+}
+
+h2 {
+    text-align: center;
+    margin: 0px;
+}
+
+.red {
+    background-color: peru;
+}
+
+.green {
+    background-color: palegreen;
+}
+
+.blue {
+    background-color: mediumturquoise;
+}
+
+.yellow {
+    background-color: goldenrod;
+}
+
+.cyan {
+    background-color: aquamarine;
+}
+
+.purple {
+    background-color: mediumorchid;
+}
+
+.white {
+    background-color: white;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+img {
+    display: inline-block;
+}
+
+p {
+    margin: 15px 25px;
+    text-align: justify;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+}
+
+.background-img {
+    position: relative;
+}
+
+.background {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform:  translate(-50%,-50%);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: decimal;
+}
