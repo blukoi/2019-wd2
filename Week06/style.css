@@ -1,0 +1,43 @@
+.red {
+    background-color: peru;
+}
+
+.green {
+    background-color: palegreen;
+}
+
+.blue {
+    background-color: mediumturquoise;
+}
+
+.yellow {
+    background-color: goldenrod;
+}
+
+.cyan {
+    background-color: aquamarine;
+}
+
+.purple {
+    background-color: mediumorchid;
+}
+
+.white {
+    background-color: white;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.content {
+    margin: 0 auto;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    filter: hue-rotate(180deg);
+}
