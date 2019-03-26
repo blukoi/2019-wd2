@@ -1,0 +1,80 @@
+body {
+    background-color: black;
+}
+
+header {
+    float: left;
+    margin: auto;
+    margin-top: -8px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 78px;
+    text-align: center;
+    color: rgb(113, 25, 196);
+    background-color: black;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute-translate {
+    position: absolute;
+    top: 39px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-title {
+    width: 100%;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif, bold;
+    text-align: center;
+    margin: 0px 10px;
+    margin-bottom: 15px;
+    color: red;
+    font-size: 32px;
+}
+
+h2 {
+    text-align: center;
+    margin: 0px;
+}
+
+.red {
+    background-color: peru;
+}
+
+.green {
+    background-color: palegreen;
+}
+
+.blue {
+    background-color: mediumturquoise;
+}
+
+.yellow {
+    background-color: goldenrod;
+}
+
+.cyan {
+    background-color: aquamarine;
+}
+
+.purple {
+    background-color: mediumorchid;
+}
+
+.white {
+    background-color: white;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
