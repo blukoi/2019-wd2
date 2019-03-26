@@ -27,9 +27,10 @@ header {
 
 .section-title {
     width: 100%;
-    padding-top: 10px;
+    padding: 11px 0 1px 0;
     margin-bottom: 10px;
     text-align: center;
+    background-color: rgb(22, 22, 22);
 }
 
 h1 {
@@ -37,8 +38,9 @@ h1 {
     text-align: center;
     margin: 0px 10px;
     margin-bottom: 15px;
-    color: red;
-    font-size: 32px;
+    color: white;
+    font-size: 26px;
+    letter-spacing: .05em;
 }
 
 h2 {

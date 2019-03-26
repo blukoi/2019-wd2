@@ -20,8 +20,11 @@ body {
 .floater-section {
     float: left;
     width: 100%;
-    min-height:250px;
     position: relative;
+}
+
+.item {
+    min-height:250px;
 }
 
 .clearfix {
@@ -30,7 +33,7 @@ body {
 
 .navbar {
     float: left;
-    background-color: white;
+    background-color: black;
     width: 100%;
     margin-top: -8px;
     padding: 5px 0px;
@@ -40,7 +43,7 @@ body {
 .navbar a {
     font-size: 20px;
     text-decoration: none;
-    color: black;
+    color: white;
     font-family: 'Roboto Slab', sans-serif, bold;
     letter-spacing: .1em;
 }
@@ -73,7 +76,7 @@ p {
     padding-bottom: 15px;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    color: rgb(113, 25, 196);
+    color: rgb(206, 206, 206);
 }
 
 footer {
@@ -82,6 +85,7 @@ footer {
     text-align: center;
     padding-top: 15px;
     margin-top: 50px;
+    background-color: rgb(22, 22, 22);
 }
 
 /**********SMALL SCREEN**********/
