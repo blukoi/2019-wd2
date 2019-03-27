@@ -43,6 +43,14 @@ h1 {
     letter-spacing: .05em;
 }
 
+.section-title h1 {
+    color: rgb(200, 200, 200);
+}
+
+.section-title p {
+    color: rgb(100, 100, 100);
+}
+
 h2 {
     text-align: center;
     margin: 0px;
@@ -79,4 +87,63 @@ h2 {
 .black {
     background-color: black;
     color: white;
+}
+
+.lightgray {
+    background-color: rgb(75, 75, 75);
+    color: black;
+}
+
+.instagram {
+    max-width: 90%;
+    margin: 5% auto;
+}
+
+.instagram-media {
+}
+
+.footer-social {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+.footer-copyright {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+.footer-social p {
+}
+
+.footer-copyright p {
+    color: rgb(75, 75, 75);
+    background-color: rgb(22, 22, 22);
+}
+
+/**********SMALL SCREEN**********/
+@media(min-width: 450px) {
+
+}
+
+/**********MEDIUM SCREEN**********/
+@media(min-width: 768px) {
+    .footer-social {
+        text-align: left;
+        width: 50%;
+    }
+
+    .footer-copyright {
+        text-align: right;
+        width: 50%;
+    }
+
+    .footer-copyright p {
+    }
+}
+
+/**********LARGE SCREEN**********/
+@media(min-width: 992px) {
+
 }

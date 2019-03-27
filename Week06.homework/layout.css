@@ -33,7 +33,7 @@ body {
 
 .navbar {
     float: left;
-    background-color: black;
+    background-color: rgb(134,134,134);
     width: 100%;
     margin-top: -8px;
     padding: 5px 0px;
@@ -43,7 +43,7 @@ body {
 .navbar a {
     font-size: 20px;
     text-decoration: none;
-    color: white;
+    color: rgb(200, 200, 200);
     font-family: 'Roboto Slab', sans-serif, bold;
     letter-spacing: .1em;
 }
@@ -56,7 +56,7 @@ body {
 }
 
 .navbar li {
-    border-bottom: 2px solid rgb(83, 83, 83);
+    border-bottom: 2px solid rgb(85, 85, 85);
 }
 
 .navbar li:last-child {
@@ -65,10 +65,12 @@ body {
 
 a:hover {
     background-color: white;
+    color: red;
 }
 
 a:active {
     background-color: black;
+    color: rgb(30,30,30);
 }
 
 p {
@@ -84,7 +86,7 @@ footer {
     width: 100%;
     text-align: center;
     padding-top: 15px;
-    margin-top: 50px;
+    margin-top: 25px;
     background-color: rgb(22, 22, 22);
 }
 
@@ -174,16 +176,12 @@ footer {
         padding: 2px 10px;
         margin: 10px 5px;
         border-bottom: none;
-        background-color: black;
+        background-color: rgb(75, 75, 75);
     }
 
     .navbar ul {
         text-align: right;
         margin: 0 10px 0 0;
-    }
-
-    .navbar a {
-        color: white;
     }
 }
 
@@ -232,10 +230,6 @@ footer {
         padding: 2px 10px;
         margin: 10px 5px;
         border-bottom: none;
-        background-color: black;
-    }
-
-    .navbar a {
-        color: white;
+        background-color: rgb(75, 75, 75);
     }
 }
