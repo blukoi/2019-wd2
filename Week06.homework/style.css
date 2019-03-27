@@ -39,8 +39,8 @@ h1 {
     margin: 0px 10px;
     margin-bottom: 15px;
     color: white;
-    font-size: 26px;
-    letter-spacing: .05em;
+    font-size: 22px;
+    letter-spacing: .1em;
 }
 
 .section-title h1 {
@@ -112,9 +112,6 @@ h2 {
     float: left;
     position: relative;
     width: 100%;
-}
-
-.footer-social p {
 }
 
 .footer-copyright p {
