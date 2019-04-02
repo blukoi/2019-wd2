@@ -80,6 +80,10 @@ p {
     color: rgb(206, 206, 206);
 }
 
+.google-maps {
+    padding: 10px 0 0 0;
+}
+
 footer {
     flex-shrink: 0;
     width: 100%;
