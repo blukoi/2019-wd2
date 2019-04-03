@@ -176,12 +176,12 @@ header a {
 
 .footer-social img {
     max-width: 36px;
-    filter: hue-rotate(130deg);
+    filter: hue-rotate(140deg);
 }
 
 .about-socials img {
     max-width: 36px;
-    filter: hue-rotate(130deg);
+    filter: hue-rotate(140deg);
     margin: 0;
 }
 
