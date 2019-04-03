@@ -45,6 +45,8 @@ h1 {
     color: white;
     font-size: 22px;
     letter-spacing: .1em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 .section-title h1 {
@@ -58,6 +60,8 @@ h1 {
 h2 {
     text-align: center;
     margin: 0px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 .red {
@@ -181,6 +185,13 @@ header a {
     margin: 0;
 }
 
+footer {
+    background-image: url(images/Blackbeards.png);
+    background-size: 110px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .footer-copyright {
     float: left;
     position: relative;
@@ -189,7 +200,7 @@ header a {
 
 .footer-copyright p {
     color: rgb(75, 75, 75);
-    background-color: rgb(22, 22, 22);
+    background-color: none;
 }
 
 .content-content {
@@ -225,8 +236,8 @@ header a {
 }
 
 .large-show .content-content h1 {
-    color: white;
-    background-color: rgba(255, 50, 50, 0.5);
+    color: rgb(230, 230, 230);
+    background-color: rgba(255, 50, 50, 0.30);
     padding: 15px 25px;
 }
 
