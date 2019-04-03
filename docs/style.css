@@ -245,6 +245,39 @@ footer {
     margin-bottom: 15px;
 }
 
+.btn {
+    border: none;
+    color: white;
+    width: 92%;
+    height: 40px;
+    margin: 0 4% auto;
+    cursor: pointer;
+}
+
+.btn p {
+    color: white;
+    margin: 10px 0 0 0;
+}
+
+.addtocart {
+    background-color: rgb(100, 100, 100);
+}
+
+.addtocart:hover {
+    background-color: rgb(255, 50, 50);
+}
+
+.shopsize {
+    border: none;
+    color: white;
+    width: 50%;
+    height: 25px;
+    margin: 0 25% auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: rgb(100, 100, 100);
+}
+
 /**********SMALL SCREEN**********/
 @media(min-width: 450px) {
 
