@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>I am inevitable.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="layout.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Have You Seen Avengers: Endgame Yet?</h1>
+        <p>(This page may contain spoilers.)</p>
+    </header>
+
+    <div class="container">
+
+        <div class="floater-section small-width-50">
+            <h2>Let's see who survives:</h2>
+            <input type="button" name="TriggerCap" value="Captain America?" onclick="showDiv()" />
+            <div id="AnswerCap"  style="display:none;"><p>I can do this all day.</p></div><br>
+
+            <input type="button" name="TriggerIM" value="Iron Man?" onclick="showDiv()" />
+            <div id="AnswerIM"  style="display:none;"><p>I love you 3,000.</p></div><br>
+
+            <input type="button" name="TriggerBW" value="Thor?" onclick="showDiv()" />
+            <div id="AnswerThor"  style="display:none;"><p>He didn't even go for the head.</p></div><br>
+        </div>
+
+        <div class="floater-section small-width-50">
+            <h2>How long has Endgame been out?</h2>
+            <button onclick="myFunction">Let's find out.</button>
+            <p id="daysdisplay"></p>
+        </div>
+
+    </div>
+    
+    <script>
+        function showDiv() {
+            document.getElementById('AnswerCap').style.display = "block";
+        }
+
+        function showDiv() {
+            document.getElementById('AnswerIM').style.display = "block";
+        }
+
+        function showDiv() {
+            document.getElementById('AnswerThor').style.display = "block";
+        }
+
+        var myFunction = function(){
+            var a = new Date(2019, 3, 26);
+            var b = a.getMilliseconds();
+            var c = new Date();
+            var d = c.getMilliseconds();
+
+            var x = d - b;
+
+            document.getElementById("daysdisplay").innerHTML = x;
+        }
+
+    </script>
+
+</body>
+</html>

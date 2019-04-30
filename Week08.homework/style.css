@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(28, 36, 43);
+}
+
+header {
+    width: 100%;
+    background-color: rgb(28, 36, 43);
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    margin-top: 20px;
+}
+
+header p {
+    color: darkgray;
+}
+
+.container {
+    text-align: center;
+}
+
+.container h2 {
+    color: white;
+}
+
+p {
+    color: white;
+}
