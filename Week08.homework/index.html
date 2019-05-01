@@ -10,21 +10,23 @@
 </head>
 <body>
     <header>
-        <h1>Have You Seen Avengers: Endgame Yet?</h1>
-        <p>(This page may contain spoilers.)</p>
+        <div class="banner">
+            <h1>Have You Seen Avengers: Endgame Yet?</h1>
+            <p>(This page may contain spoilers.)</p>
+        </div>
     </header>
 
     <div class="container">
 
         <div class="floater-section small-width-50">
             <h2>Let's see who survives:</h2>
-            <input type="button" name="TriggerCap" value="Captain America?" onclick="showDiv()" />
+            <input type="button" name="TriggerCap" value="Captain America?" onclick="showDivCap()" />
             <div id="AnswerCap"  style="display:none;"><p>I can do this all day.</p></div><br>
 
-            <input type="button" name="TriggerIM" value="Iron Man?" onclick="showDiv()" />
+            <input type="button" name="TriggerIM" value="Iron Man?" onclick="showDivIM()" />
             <div id="AnswerIM"  style="display:none;"><p>I love you 3,000.</p></div><br>
 
-            <input type="button" name="TriggerBW" value="Thor?" onclick="showDiv()" />
+            <input type="button" name="TriggerBW" value="Thor?" onclick="showDivThor()" />
             <div id="AnswerThor"  style="display:none;"><p>He didn't even go for the head.</p></div><br>
         </div>
 
@@ -37,15 +39,15 @@
     </div>
     
     <script>
-        function showDiv() {
+        function showDivCap() {
             document.getElementById('AnswerCap').style.display = "block";
         }
 
-        function showDiv() {
+        function showDivIM() {
             document.getElementById('AnswerIM').style.display = "block";
         }
 
-        function showDiv() {
+        function showDivThor() {
             document.getElementById('AnswerThor').style.display = "block";
         }
 

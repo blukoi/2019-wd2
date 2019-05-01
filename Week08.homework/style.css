@@ -4,8 +4,12 @@ body {
 
 header {
     width: 100%;
-    background-color: rgb(28, 36, 43);
     text-align: center;
+    margin: 25px;
+}
+
+.banner {
+    margin: 25px 0;
 }
 
 header h1 {
