@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Arrays</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <h1>Which car would you like to test?</h1>
+
+        <form action="#" method="POST">
+            <label for="carMake">Car Make</label>
+            <select name="Make" id="carMake">
+                <option value="audi">Audi</option>
+                <option value="bmw">BMW</option>
+                <option value="merc">Mercedes-Benz</option>
+                <option value="porsche">Porsche</option>
+            </select>
+
+            <label for="carModel">Car Model</label>
+            <select name="Model" id="carModel">
+            </select>
+        </form>
+    </main>
+
+    <script>
+
+        var audimodels      = ["S3", "S5", "S7"];
+        var bmwmodels       = ["Series 3", "Series 5", "Series 7", "E8"];
+        var mercmodels      = ["C-class", "E-class", "S-class"];
+        var porschemodels   = ["911", "918", "Macan", "Panamera", "Cayenne"];
+
+        var makeDropdown = document.getElementById("carMake");
+        var modelDropdown = document.getElementById("carModel");
+        makeDropdown.addEventListener("change", function(){
+            console.log(this.value);
+
+            modelDropdown.innerHTML = "";
+
+            if(this.value === "audi"){
+                for(var i = 0; i < audimodels.length; i++){
+                    modelDropdown.innerHTML += '<option value="' + audimodels[i] + '">' + audimodels[i] + '</option>'
+                }
+            }else if(this.value === "bmw"){
+                for(var i = 0; i < bmwmodels.length; i++){
+                    modelDropdown.innerHTML += '<option value="' + bmwmodels[i] + '">' + bmwmodels[i] + '</option>'
+                }
+            }else if(this.value === "merc"){
+                for(var i = 0; i < mercmodels.length; i++){
+                    modelDropdown.innerHTML += '<option value="' + mercmodels[i] + '">' + mercmodels[i] + '</option>'
+                }
+            }else if(this.value === "porsche"){
+                for(var i = 0; i < porschemodels.length; i++){
+                    modelDropdown.innerHTML += '<option value="' + porschemodels[i] + '">' + porschemodels[i] + '</option>'
+                }
+            }
+            // <option value="">Text</option>
+
+            console.log(modelDropdown.innerHTML);
+        });
+
+    </script>
+
+</body>
+</html>

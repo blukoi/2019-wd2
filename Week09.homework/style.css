@@ -20,6 +20,12 @@ ul {
     margin: 25px 0;
 }
 
+a {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: rgb(30, 28, 32);
@@ -46,8 +52,9 @@ ul {
   
 /* Add an active class to highlight the current page */
 .active {
-    background-color: rgb(58, 7, 117);
+    background-color: rgb(87, 31, 150);
     color: rgb(30, 28, 32);
+    border-bottom: 5px;
 }
   
 /* Hide the link that should open and close the topnav on small screens */
