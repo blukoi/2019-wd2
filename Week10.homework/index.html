@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Beer Stuff</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="layout.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700|Raleway:400,400i,700,700i" rel="stylesheet">
+</head>
+<body>
+    <div class="floater-section header">
+        <div class="banner">
+            <img src="http://iba.org.au/wp-content/uploads/2019/02/logo-inverse.png" alt="Avengers: Endgame Logo">
+        </div>
+
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Beers</a>
+            <a href="#news">Breweries</a>
+            <a href="#contact">Events</a>
+            <a href="#about">News</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="container content">
+
+        <h1>What beer would you like to know more about?</h1>
+
+        <form action="#" method="POST">
+            <label for="Brewery">Brewery</label>
+            <select name="Brewery" id="Brewery">
+                <option value="alesmith">Alesmith</option>
+                <option value="goose">Goose Island</option>
+                <option value="mikk">Mikkeller</option>
+                <option value="mt">Modern Times</option>
+            </select>
+
+            <label for="Beer">Beer</label>
+            <select name="Beer" id="Beer">
+            </select>
+        </form>
+
+    </div>
+    
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                    }
+                }
+
+        var adj           = ["Coffee", "Bourbon Barrel Aged", "Lactose (Milk Sugar)", "Cacao Nibs", "Vanilla Beans", "Orange", "Blueberry"]
+        var alesmithbeer  = ["Speedway Stout", "Hawaiian Speedway Stout", "Rye Bourban Barrel Aged Vietnamese Speedway Stout"];
+        var goosebeer     = ["Bourbon County", "Bourbon County Vanilla Stout", "Bourbon County Midnight Orange Stout", "Bourbon County Coffee Barleywine"];
+        var mikkbeer      = ["Beer Geek Breakfast", "Flat White Stout (Blueberry, Coffee, & Lactose)"];
+        var mtbeer        = ["Black House", "Monster's Park", "Devil's Teeth", "Nitro Black House", "City of the Dead"];
+
+        var brewDropdown = document.getElementById("Brewery");
+        var beerDropdown = document.getElementById("Beer");
+        brewDropdown.addEventListener("change", function(){
+        console.log(this.value);
+
+        beerDropdown.innerHTML = "";
+
+        if(this.value === "alesmith"){
+            for(var i = 0; i < alesmithbeer.length; i++){
+                beerDropdown.innerHTML += '<option value="' + alesmithbeer[i] + '">' + alesmithbeer[i] + '</option>'
+            }
+        }else if(this.value === "goose"){
+            for(var i = 0; i < goosebeer.length; i++){
+                beerDropdown.innerHTML += '<option value="' + goosebeer[i] + '">' + goosebeer[i] + '</option>'
+            }
+        }else if(this.value === "mikk"){
+            for(var i = 0; i < mikkbeer.length; i++){
+                beerDropdown.innerHTML += '<option value="' + mikkbeer[i] + '">' + mikkbeer[i] + '</option>'
+            }
+        }else if(this.value === "mt"){
+            for(var i = 0; i < mtbeer.length; i++){
+                beerDropdown.innerHTML += '<option value="' + mtbeer[i] + '">' + mtbeer[i] + '</option>'
+            }
+        }
+        // <option value="">Text</option>
+
+        console.log(beerDropdown.innerHTML);
+        });
+
+        if(this.value === alesmithbeer(1)){
+            for(var i = 0; i < alesmithbeer.length; i++)
+        }
+
+    </script>
+
+</body>
+</html>
