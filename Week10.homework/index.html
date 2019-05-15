@@ -29,7 +29,7 @@
 
     <div class="container content">
 
-        <h1>What beer would you like to know more about?</h1>
+        <h2>What beer would you like to know more about?</h2>
 
         <form action="#" method="POST">
             <label for="Brewery">Brewery</label>
@@ -45,6 +45,8 @@
             </select>
         </form>
 
+        <div id="beerinfo"></div>
+
     </div>
     
     <script>
@@ -57,11 +59,11 @@
                     }
                 }
 
-        var adj           = ["Coffee", "Bourbon Barrel Aged", "Lactose (Milk Sugar)", "Cacao Nibs", "Vanilla Beans", "Orange", "Blueberry"]
         var alesmithbeer  = ["Speedway Stout", "Hawaiian Speedway Stout", "Rye Bourban Barrel Aged Vietnamese Speedway Stout"];
         var goosebeer     = ["Bourbon County", "Bourbon County Vanilla Stout", "Bourbon County Midnight Orange Stout", "Bourbon County Coffee Barleywine"];
         var mikkbeer      = ["Beer Geek Breakfast", "Flat White Stout (Blueberry, Coffee, & Lactose)"];
         var mtbeer        = ["Black House", "Monster's Park", "Devil's Teeth", "Nitro Black House", "City of the Dead"];
+        var adj           = ["coffee", "bourbon barrel aged", "lactose (milk sugar)", "cacao nibs", "vanilla beans", "oranges", "blueberries", "coconut"]
 
         var brewDropdown = document.getElementById("Brewery");
         var beerDropdown = document.getElementById("Beer");
@@ -69,6 +71,7 @@
         console.log(this.value);
 
         beerDropdown.innerHTML = "";
+        document.getElementById("beerinfo").innerHTML = "";
 
         if(this.value === "alesmith"){
             for(var i = 0; i < alesmithbeer.length; i++){
@@ -92,9 +95,44 @@
         console.log(beerDropdown.innerHTML);
         });
 
-        if(this.value === alesmithbeer(1)){
-            for(var i = 0; i < alesmithbeer.length; i++)
+        var beerInfo = document.getElementById("beerinfo");
+        beerDropdown.addEventListener("change", function(){
+        console.log(this.value);
+
+        beerInfo.innerHTML = "";
+
+        if(this.value === alesmithbeer[0]){
+            beerInfo.innerHTML += '<p>This beer was made with ' + adj[0] + '.</p>'
+        }else if(this.value === alesmithbeer[1]){
+            beerInfo.innerHTML += '<p>This beer was made with ' + adj[0] + ' & ' + adj[1] + '.</p>'
+        }else if(this.value === alesmithbeer[2]){
+            beerInfo.innerHTML += '<p>This beer was made with ' + adj[0] + ', ' + adj[4] + ', & ' + adj[1] + '.</p>'
+        }else if(this.value === goosebeer[0]){
+            beerInfo.innerHTML += '<p>This beer was made with ' + adj[3] + ' & ' + adj[1] + '.</p>'
+        }else if(this.value === goosebeer[1]){
+            beerInfo.innerHTML += '<p>This beer was made with ' + adj[3] + ', ' + adj[4] + ', & ' + adj[1] + '.</p>'
+        }else if(this.value === goosebeer[2]){
+            beerInfo.innerHTML += '<p>This beer was made with ' + adj[3] + ', ' + adj[5] + ', & ' + adj[1] + '.</p>'
+        }else if(this.value === goosebeer[3]){
+            beerInfo.innerHTML += '<p>This beer was made with ' + adj[3] + ', ' + adj[0] + ', & ' + adj[1] + '.</p>'
+        }else if(this.value === mikkbeer[0]){
+            beerInfo.innerHTML += '<p>This beer was made with ' + adj[0] + '.</p>'
+        }else if(this.value === mikkbeer[1]){
+            beerInfo.innerHTML += '<p>This beer was made with ' + adj[6] + ', ' + adj[0] + ', & ' + adj[2] + '.</p>'
+        }else if(this.value === mtbeer[0]){
+            beerInfo.innerHTML += '<p>This beer was made with ' + adj[0] + '.</p>'
+        }else if(this.value === mtbeer[1]){
+            beerInfo.innerHTML += '<p>This beer was ' + adj[1] + '.</p>'
+        }else if(this.value === mtbeer[2]){
+            beerInfo.innerHTML += '<p>This beer was made with ' + adj[0] + ' & ' + adj[1] + '.</p>'
+        }else if(this.value === mtbeer[3]){
+            beerInfo.innerHTML += '<p>This beer was made with ' + adj[0] + ', ' + adj[7] + ', & ' + adj[3] + '.</p>'
+        }else if(this.value === mtbeer[4]){
+            beerInfo.innerHTML += '<p>This beer was made with ' + adj[0] + ' & ' + adj[1] + '.</p>'
         }
+
+        console.log(beerInfo.innerHTML);
+        });
 
     </script>
 
