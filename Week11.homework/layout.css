@@ -1,0 +1,177 @@
+.floater-section {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+body {
+    background-color: rgb(30, 28, 32);
+    margin: -8px;
+    color: white;
+}
+
+.base-width-25 {
+    width: 25%;
+}
+
+.base-width-33 {
+    width: 33.3333%;
+}
+
+.base-width-50 {
+    width: 50%;
+}
+
+.base-width-66 {
+    width: 66.6666%;
+}
+
+.base-width-75 {
+    width: 75%;
+}
+
+.base-width-100 {
+    width: 100%;
+}
+
+.topnav a:not(:last-child) {display: none;}
+.topnav a.icon {
+    float: right;
+    display: block;
+}
+
+.topnav.responsive {position: relative;}
+.topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+/**********SMALL SCREEN**********/
+@media(min-width: 450px) {
+    body {
+        width: 430px;
+        margin: 0 auto;
+    }
+
+    .container {
+        width: 430px;
+        margin: auto;
+    }
+
+    .small-width-25 {
+        width: 25%;
+    }
+
+    .small-width-33 {
+        width: 33.3333%;
+    }
+    
+    .small-width-50 {
+        width: 50%;
+    }
+
+    .small-width-66 {
+        width: 66.6666%;
+    }
+
+    .small-width-75 {
+        width: 75%;
+    }
+
+    .small-width-100 {
+        width: 100%;
+    }
+}
+
+/**********MEDIUM SCREEN**********/
+@media(min-width: 768px) {
+    body {
+        width: 750px;
+        margin: 0 auto;
+    }
+
+    .container {
+        width: 750px;
+        margin: auto;
+    }
+
+    .medium-width-25 {
+        width: 25%;
+    }
+
+    .medium-width-33 {
+        width: 33.3333%;
+    }
+
+    .medium-width-50 {
+        width: 50%;
+    }
+
+    .medium-width-66 {
+        width: 66.6666%;
+    }
+
+    .medium-width-75 {
+        width: 75%;
+    }
+
+    .medium-width-100 {
+        width: 100%;
+    }
+
+    .topnav a:not(:last-child) {display: inline-block;}
+    .topnav a.icon {
+        display: none;
+    }
+
+    .topnav {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/**********LARGE SCREEN**********/
+@media(min-width: 992px) {
+    body {
+        width: 960px;
+    }
+
+    .container {
+        width: 960px;
+    }
+
+    .large-width-25 {
+        width: 25%;
+    }
+
+    .large-width-33 {
+        width: 33.3333%;
+    }
+
+    .large-width-50 {
+        width: 50%;
+    }
+
+    .large-width-66 {
+        width: 66.6666%;
+    }
+
+    .large-width-75 {
+        width: 75%;
+    }
+
+    .large-width-100 {
+        width: 100%;
+    }
+}

@@ -1,0 +1,66 @@
+.header {
+    text-align: center;
+}
+
+.gallery-display {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.gallery-display img {
+    max-width: 100%;
+}
+
+.thumbmain {
+    float: left;
+    position: relative;
+    background-color: white;
+}
+.thumbactual {
+    margin: 10px;
+    background-color: black;
+}
+
+.gallery-thumb {
+    margin-bottom: 50px;
+}
+
+i {
+    border: solid black;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 5px;
+}
+
+.left {
+    float: left;
+    width: 5%;
+}
+
+.gallery-left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.right {
+    float: left;
+    width: 5%;
+}
+
+.gallery-right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.gallery-actual {
+    float: left;
+    width: 90%;
+}
+
+.thumbactual img {
+    max-width: 100%;
+}
+
+.display .display-actual {
+    width: 100%;
+}
