@@ -2,13 +2,22 @@
     text-align: center;
 }
 
-.gallery-display {
+.test {
+    margin: 50px 0 100px 0;
+}
+
+#gallerydisplay {
     width: 100%;
     margin-bottom: 50px;
 }
 
-.gallery-display img {
+#gallerydisplay img {
     max-width: 100%;
+}
+
+.gallerycenter {
+    margin: 0 auto;
+    text-align: center;
 }
 
 .thumbmain {
@@ -16,17 +25,46 @@
     position: relative;
     background-color: white;
 }
+
+.delete {
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 auto;
+    z-index: 100;
+    background-color: white;
+    opacity: 0.65;
+}
+
+.delete:hover {
+    opacity: 1;
+}
+
 .thumbactual {
     margin: 10px;
     background-color: black;
 }
 
-.gallery-thumb {
-    margin-bottom: 50px;
+.delete img {
+    width: 40px;
+    height: 40px;
+}
+
+.add {
+    transform: rotate(45deg);
+}
+
+.gallerythumbs {
+    width: 95%;
+    margin: 50px 0 auto;
 }
 
 i {
-    border: solid black;
+    border: solid white;
     border-width: 0 5px 5px 0;
     display: inline-block;
     padding: 5px;
@@ -37,7 +75,7 @@ i {
     width: 5%;
 }
 
-.gallery-left {
+.galleryleft {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
 }
@@ -47,20 +85,21 @@ i {
     width: 5%;
 }
 
-.gallery-right {
+.galleryright {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 }
 
-.gallery-actual {
+.displayactual {
     float: left;
-    width: 90%;
+    width: 80%;
+    margin: 0 10px;
 }
 
 .thumbactual img {
     max-width: 100%;
 }
 
-.display .display-actual {
+#gallerydisplay .displayactual img {
     width: 100%;
 }

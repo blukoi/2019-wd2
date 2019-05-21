@@ -32,47 +32,58 @@
 
     <h1 class="header" id="Top">Hello, World!</h1>
 
-    <div class="gallery-display">
-        <div class="left"><i class="gallery-left"></i></div>
-        <div class="display-actual"></div>
-        <div class="right"><i class="gallery-right"></i></div>
+    <div id="gallerydisplay">
+        <div class="gallerycenter">
+            <div class="left"><i class="galleryleft"></i></div>
+            <div class="displayactual"></div>
+            <div class="right"><i class="galleryright"></i></div>
+        </div>
     </div>
 
-    <div class="gallery-thumbs">
+    <div class="gallerythumbs">
 
         <div class="thumbmain 1 base-width-33 display">
-            <div class="thumbactual"><img src="images/img_Page_1.png"></div>
+            <div id="slot1" class="thumbactual"><img src="images/img-01.png"></div>
+            <div id="d1" class="delete"><img src="https://static.thenounproject.com/png/5493-200.png" alt="Delete" class="x"></div>
         </div>
         <div class="thumbmain 2 base-width-33">
-            <div class="thumbactual"><img src="images/img_Page_2.png"></div>
+            <div id="slot2" class="thumbactual"><img src="images/img-02.png"></div>
+            <div id="d2" class="delete"><img src="https://static.thenounproject.com/png/5493-200.png" alt="Delete" class="x"></div>
         </div>
         <div class="thumbmain 3 base-width-33">
-            <div class="thumbactual"><img src="images/img_Page_3.png"></div>
+            <div id="slot3" class="thumbactual"><img src="images/img-03.png"></div>
+            <div id="d3" class="delete"><img src="https://static.thenounproject.com/png/5493-200.png" alt="Delete" class="x"></div>
         </div>
 
         <div class="thumbmain 4 base-width-33">
-            <div class="thumbactual"><img src="images/img_Page_4.png"></div>
+            <div id="slot4" class="thumbactual"><img src="images/img-04.png"></div>
+            <div id="d4" class="delete"><img src="https://static.thenounproject.com/png/5493-200.png" alt="Delete" class="x"></div>
         </div>
         <div class="thumbmain 5 base-width-33">
-            <div class="thumbactual"><img src="images/img_Page_5.png"></div>
+            <div id="slot5" class="thumbactual"><img src="images/img-05.png"></div>
+            <div id="d5" class="delete"><img src="https://static.thenounproject.com/png/5493-200.png" alt="Delete" class="x"></div>
         </div>
         <div class="thumbmain 6 base-width-33">
-            <div class="thumbactual"><img src="images/img_Page_6.png"></div>
+            <div id="slot6" class="thumbactual"><img src="images/img-06.png"></div>
+            <div id="d6" class="delete"><img src="https://static.thenounproject.com/png/5493-200.png" alt="Delete" class="x"></div>
         </div>
 
         <div class="thumbmain 7 base-width-33">
-            <div class="thumbactual"><img src="images/img_Page_7.png"></div>
+            <div id="slot7" class="thumbactual"><img src="images/img-07.png"></div>
+            <div id="d7" class="delete"><img src="https://static.thenounproject.com/png/5493-200.png" alt="Delete" class="x"></div>
         </div>
         <div class="thumbmain 8 base-width-33">
-            <div class="thumbactual"><img src="images/img_Page_8.png"></div>
+            <div id="slot8" class="thumbactual"><img src="images/img-08.png"></div>
+            <div id="d8" class="delete"><img src="https://static.thenounproject.com/png/5493-200.png" alt="Delete" class="x"></div>
         </div>
         <div class="thumbmain 9 base-width-33">
-            <div class="thumbactual"><img src="images/img_Page_9.png"></div>
+            <div id="slot9" class="thumbactual"><img src="images/img-09.png"></div>
+            <div id="d9" class="delete"><img src="https://static.thenounproject.com/png/5493-200.png" alt="Delete" class="x"></div>
         </div>
 
     </div>
 
-    <div class="floater-section">
+    <div class="floater-section test">
 
         <button id="btn1">Append Things</button>
         <button id="btn2">Prepend Things</button>
@@ -107,10 +118,86 @@
     <script>
 
         $(document).ready(function(){
-            $('.display').clone().prependTo('.display-actual');
+            $('.display').clone().prependTo('.displayactual').removeClass('base-width-33');
+
+            console.log ( $('#gallerydisplay .displayactual .thumbactual').css('width') );
+
+            $('div:nth-of-type(1) .delete .x').click(function d1(){
+                var a = confirm("Are you sure you want to delete this picture?");
+                if (a == true) {
+                    $('div:nth-of-type(1) .thumbactual').empty().append('<img src="images/img-10.png" class="empty">');
+                    $('div:nth-of-type(1) .delete img').removeClass('x').addClass('add');
+                }
+            })
+
+            $('div:nth-of-type(2) .delete .x').click(function d2(){
+                var b = confirm("Are you sure you want to delete this picture?");
+                if (b == true) {
+                    $('div:nth-of-type(2) .thumbactual').empty().append('<img src="images/img-10.png" class="empty">');
+                    $('div:nth-of-type(2) .delete').empty().append('<img src="https://static.thenounproject.com/png/5493-200.png" alt="Add" class="add">');
+                }
+            })
+
+            $('div:nth-of-type(3) .delete .x').click(function d3(){
+                var c = confirm("Are you sure you want to delete this picture?");
+                if (c == true) {
+                    $('div:nth-of-type(3) .thumbactual').empty().append('<img src="images/img-10.png" class="empty">');
+                    $('div:nth-of-type(3) .delete').empty().append('<img src="https://static.thenounproject.com/png/5493-200.png" alt="Add" class="add">')
+                }
+            })
+
+            $('div:nth-of-type(4) .delete .x').click(function d4(){
+                var d = confirm("Are you sure you want to delete this picture?");
+                if (d == true) {
+                    $('div:nth-of-type(4) .thumbactual').empty().append('<img src="images/img-10.png" class="empty">');
+                    $('div:nth-of-type(4) .delete').empty().append('<img src="https://static.thenounproject.com/png/5493-200.png" alt="Add" class="add">');
+                }
+            })
+
+            $('div:nth-of-type(5) .delete .x').click(function d5(){
+                var e = confirm("Are you sure you want to delete this picture?");
+                if (e == true) {
+                    $('div:nth-of-type(5) .thumbactual').empty().append('<img src="images/img-10.png" class="empty">');
+                    $('div:nth-of-type(5) .delete').empty().append('<img src="https://static.thenounproject.com/png/5493-200.png" alt="Add" class="add">');
+                }
+            })
+
+            $('div:nth-of-type(6) .delete .x').click(function d6(){
+                var f = confirm("Are you sure you want to delete this picture?");
+                if (f == true) {
+                    $('div:nth-of-type(6) .thumbactual').empty().append('<img src="images/img-10.png" class="empty">');
+                    $('div:nth-of-type(6) .delete').empty().append('<img src="https://static.thenounproject.com/png/5493-200.png" alt="Add" class="add">');
+                }
+            })
+
+            $('div:nth-of-type(7) .delete .x').click(function d7(){
+                var g = confirm("Are you sure you want to delete this picture?");
+                if (g == true) {
+                    $('div:nth-of-type(7) .thumbactual').empty().append('<img src="images/img-10.png" class="empty">');
+                    $('div:nth-of-type(7) .delete').empty().append('<img src="https://static.thenounproject.com/png/5493-200.png" alt="Add" class="add">');
+                }
+            })
+
+            $('div:nth-of-type(8) .delete .x').click(function d8(){
+                var h = confirm("Are you sure you want to delete this picture?");
+                if (h == true) {
+                    $('div:nth-of-type(8) .thumbactual').empty().append('<img src="images/img-10.png" class="empty">');
+                    $('div:nth-of-type(8) .delete').empty().append('<img src="https://static.thenounproject.com/png/5493-200.png" alt="Add" class="add">');
+                }
+            })
+
+            $('div:nth-of-type(9) .delete .x').click(function d9(){
+                var i = confirm("Are you sure you want to delete this picture?");
+                if (i == true) {
+                    $('div:nth-of-type(9) .thumbactual').empty().append('<img src="images/img-10.png" class="empty">');
+                    $('div:nth-of-type(9) .delete').empty().append('<img src="https://static.thenounproject.com/png/5493-200.png" alt="Add" class="add">');
+                }
+            })
         })
 
-        //ABOVE IS THE GALLERY. BELOW IS THE PREPEND AND APPEND BUTTON TESTING
+
+
+        //ABOVE IS THE GALLERY. BELOW IS THE BUTTON TESTING
     
         $(document).ready(function(){
             $('body').css('background-color', '#a11a1e');
