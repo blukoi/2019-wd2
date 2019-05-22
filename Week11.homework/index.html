@@ -122,75 +122,80 @@
 
             console.log ( $('#gallerydisplay .displayactual .thumbactual').css('width') );
 
-            $('div:nth-of-type(1) .delete .x').click(function d1(){
+            $('#d1').click(function(){
+                if ($('#d1').children('.x').length != 0) {
+                    var a = confirm("Are you sure you want to delete this picture?");
+                    if (a == true) {
+                        $('.1 .thumbactual').empty().append('<img src="images/img-10.png" class="empty">');
+                        $('.1 .delete img').removeClass('x').addClass('add');
+                    }
+                }else if ($('#d1 img').hasClass('.add')) {
+                    $('.1 .thumbactual').empty().append('<img src="images/img-01.png">');
+                    $('.1 .delete img').removeClass('add').addClass('x');
+                }
+            })
+
+            $('#d2 .x').click(function(){
                 var a = confirm("Are you sure you want to delete this picture?");
                 if (a == true) {
-                    $('div:nth-of-type(1) .thumbactual').empty().append('<img src="images/img-10.png" class="empty">');
-                    $('div:nth-of-type(1) .delete img').removeClass('x').addClass('add');
+                    $('.2 .thumbactual').empty().append('<img src="images/img-10.png" class="empty">');
+                    $('.2 .delete img').removeClass('x').addClass('add');
                 }
             })
 
-            $('div:nth-of-type(2) .delete .x').click(function d2(){
-                var b = confirm("Are you sure you want to delete this picture?");
-                if (b == true) {
-                    $('div:nth-of-type(2) .thumbactual').empty().append('<img src="images/img-10.png" class="empty">');
-                    $('div:nth-of-type(2) .delete').empty().append('<img src="https://static.thenounproject.com/png/5493-200.png" alt="Add" class="add">');
+            $('#d3 .x').click(function(){
+                var a = confirm("Are you sure you want to delete this picture?");
+                if (a == true) {
+                    $('.3 .thumbactual').empty().append('<img src="images/img-10.png" class="empty">');
+                    $('.3 .delete img').removeClass('x').addClass('add');
                 }
             })
 
-            $('div:nth-of-type(3) .delete .x').click(function d3(){
-                var c = confirm("Are you sure you want to delete this picture?");
-                if (c == true) {
-                    $('div:nth-of-type(3) .thumbactual').empty().append('<img src="images/img-10.png" class="empty">');
-                    $('div:nth-of-type(3) .delete').empty().append('<img src="https://static.thenounproject.com/png/5493-200.png" alt="Add" class="add">')
+            $('#d4 .x').click(function(){
+                var a = confirm("Are you sure you want to delete this picture?");
+                if (a == true) {
+                    $('.4 .thumbactual').empty().append('<img src="images/img-10.png" class="empty">');
+                    $('.4 .delete img').removeClass('x').addClass('add');
                 }
             })
 
-            $('div:nth-of-type(4) .delete .x').click(function d4(){
-                var d = confirm("Are you sure you want to delete this picture?");
-                if (d == true) {
-                    $('div:nth-of-type(4) .thumbactual').empty().append('<img src="images/img-10.png" class="empty">');
-                    $('div:nth-of-type(4) .delete').empty().append('<img src="https://static.thenounproject.com/png/5493-200.png" alt="Add" class="add">');
+            $('#d5 .x').click(function(){
+                var a = confirm("Are you sure you want to delete this picture?");
+                if (a == true) {
+                    $('.5 .thumbactual').empty().append('<img src="images/img-10.png" class="empty">');
+                    $('.5 .delete img').removeClass('x').addClass('add');
                 }
             })
 
-            $('div:nth-of-type(5) .delete .x').click(function d5(){
-                var e = confirm("Are you sure you want to delete this picture?");
-                if (e == true) {
-                    $('div:nth-of-type(5) .thumbactual').empty().append('<img src="images/img-10.png" class="empty">');
-                    $('div:nth-of-type(5) .delete').empty().append('<img src="https://static.thenounproject.com/png/5493-200.png" alt="Add" class="add">');
+            $('#d6 .x').click(function(){
+                var a = confirm("Are you sure you want to delete this picture?");
+                if (a == true) {
+                    $('.6 .thumbactual').empty().append('<img src="images/img-10.png" class="empty">');
+                    $('.6 .delete img').removeClass('x').addClass('add');
                 }
             })
 
-            $('div:nth-of-type(6) .delete .x').click(function d6(){
-                var f = confirm("Are you sure you want to delete this picture?");
-                if (f == true) {
-                    $('div:nth-of-type(6) .thumbactual').empty().append('<img src="images/img-10.png" class="empty">');
-                    $('div:nth-of-type(6) .delete').empty().append('<img src="https://static.thenounproject.com/png/5493-200.png" alt="Add" class="add">');
+            $('#d7 .x').click(function(){
+                var a = confirm("Are you sure you want to delete this picture?");
+                if (a == true) {
+                    $('.7 .thumbactual').empty().append('<img src="images/img-10.png" class="empty">');
+                    $('.7 .delete img').removeClass('x').addClass('add');
                 }
             })
 
-            $('div:nth-of-type(7) .delete .x').click(function d7(){
-                var g = confirm("Are you sure you want to delete this picture?");
-                if (g == true) {
-                    $('div:nth-of-type(7) .thumbactual').empty().append('<img src="images/img-10.png" class="empty">');
-                    $('div:nth-of-type(7) .delete').empty().append('<img src="https://static.thenounproject.com/png/5493-200.png" alt="Add" class="add">');
+            $('#d8 .x').click(function(){
+                var a = confirm("Are you sure you want to delete this picture?");
+                if (a == true) {
+                    $('.8 .thumbactual').empty().append('<img src="images/img-10.png" class="empty">');
+                    $('.8 .delete img').removeClass('x').addClass('add');
                 }
             })
 
-            $('div:nth-of-type(8) .delete .x').click(function d8(){
-                var h = confirm("Are you sure you want to delete this picture?");
-                if (h == true) {
-                    $('div:nth-of-type(8) .thumbactual').empty().append('<img src="images/img-10.png" class="empty">');
-                    $('div:nth-of-type(8) .delete').empty().append('<img src="https://static.thenounproject.com/png/5493-200.png" alt="Add" class="add">');
-                }
-            })
-
-            $('div:nth-of-type(9) .delete .x').click(function d9(){
-                var i = confirm("Are you sure you want to delete this picture?");
-                if (i == true) {
-                    $('div:nth-of-type(9) .thumbactual').empty().append('<img src="images/img-10.png" class="empty">');
-                    $('div:nth-of-type(9) .delete').empty().append('<img src="https://static.thenounproject.com/png/5493-200.png" alt="Add" class="add">');
+            $('#d9 .x').click(function(){
+                var a = confirm("Are you sure you want to delete this picture?");
+                if (a == true) {
+                    $('.9 .thumbactual').empty().append('<img src="images/img-10.png" class="empty">');
+                    $('.9 .delete img').removeClass('x').addClass('add');
                 }
             })
         })
