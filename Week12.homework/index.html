@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>American Cinematheque</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="layout.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700|Raleway:400,400i,700,700i" rel="stylesheet">
+    <script src="//code.jquery.com/jquery.min.js"></script>
+</head>
+<body>
+    <div class="floater-section header">
+        <div class="banner">
+            
+        </div>
+
+        <nav class="site-nav">
+            <div class="menu-toggle">
+                <div class="hamburger"></div>
+            </div>
+            
+            <ul class="open desktop">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container content">
+
+    </div>
+    
+    <script>
+        $('.menu-toggle').click(function() {
+
+        $('ul').toggleClass('opening');
+        $(this).toggleClass('open');
+
+        })
+    </script>
+
+</body>
+</html>
