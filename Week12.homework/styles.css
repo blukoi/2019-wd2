@@ -28,11 +28,16 @@ nav li:last-child {
   
 nav a {
     color: #EBEBD3;
-    background: #e7a119;
+    background: #260947;
     display: block;
     padding: 1.5em 4em 1.5em 3em;
     text-transform: uppercase;
     text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+nav a .active {
+    background: #260947;
 }
   
 nav a:hover, nav a:focus {

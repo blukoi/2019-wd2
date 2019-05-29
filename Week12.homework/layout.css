@@ -11,7 +11,7 @@
 body {
     background-color: rgb(30, 28, 32);
     margin: -8px;
-    color: black;
+    color: white;
 }
 
 .base-width-25 {
@@ -41,13 +41,13 @@ body {
 /**********SMALL SCREEN**********/
 @media(min-width: 450px) {
     body {
-        width: 430px;
+        width: 100%;
         margin: 0 auto;
     }
 
     .container {
         width: 430px;
-        margin: auto;
+        margin: 0 auto;
     }
 
     .small-width-25 {
@@ -78,13 +78,12 @@ body {
 /**********MEDIUM SCREEN**********/
 @media(min-width: 768px) {
     body {
-        width: 750px;
         margin: 0 auto;
     }
 
     .container {
         width: 750px;
-        margin: auto;
+        margin: 0 auto;
     }
 
     .medium-width-25 {
@@ -115,11 +114,12 @@ body {
 /**********LARGE SCREEN**********/
 @media(min-width: 992px) {
     body {
-        width: 960px;
+        margin: 0 auto;
     }
 
     .container {
         width: 960px;
+        margin: 0 auto;
     }
 
     .large-width-25 {
