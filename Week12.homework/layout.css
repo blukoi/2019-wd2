@@ -9,9 +9,13 @@
 }
 
 body {
-    background-color: rgb(30, 28, 32);
-    margin: -8px;
+    background-color: #260947;
+    margin: -8px 0 0 -8px;
     color: white;
+}
+
+.container {
+    margin: 0 auto;
 }
 
 .base-width-25 {
