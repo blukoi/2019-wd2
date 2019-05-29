@@ -34,11 +34,41 @@
     </div>
 
     <div class="container content donate">
-        <h1>Help Save Cinema</h1>
 
+        <h1>Help Save Cinema</h1>
+        <p>Every Donation Helps</p>
+
+        <div class="form">
         <form>
-            
+            <label for="country">Amount</label>
+            <select id="amount" name="amount">
+                <option value="5">$5</option>
+                <option value="10">$10</option>
+                <option value="20">$20</option>
+                <option value="50">$50</option>
+                <option value="custom">Custom</option>
+            </select>
+            <label for="cust">Custom</label>
+            <input type="text" id="cust" name="cust" placeholder="Custom amount...">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="The name on your credit card...">
+            <label for="cc">Credit Card</label>
+            <input type="text" id="cc" name="cc" placeholder="**** **** **** ****">
+            <label for="exp">Expiration</label>
+            <input type="text" id="exp" name="exp" placeholder="MM/YY">
+            <input type="submit" value="Submit">
         </form>
+        </div>
+
+        <div class="thankyou">
+            <h1>
+                Thank you for helping!
+            </h1>
+            <p>
+                Your donation will go towards preserving and expanding our film collection for future generations to enjoy.
+            </p>
+        </div>
+
     </div>
     
     <script>

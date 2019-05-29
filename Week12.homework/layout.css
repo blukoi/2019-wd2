@@ -12,6 +12,9 @@ body {
     background-color: #260947;
     margin: -8px 0 0 -8px;
     color: white;
+    font-family: 'raleway', sans-serif;
+    font-size: 14px;
+    letter-spacing: .1em;
 }
 
 .container {
