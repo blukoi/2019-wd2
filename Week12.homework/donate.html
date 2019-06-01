@@ -13,9 +13,9 @@
 </head>
 <body>
     <div class="header container">
-            <div class="container heading">
+            <div class="heading">
                 <div class="logo">
-                    <img src="images/logo.png">
+                    <a href="index.html"><img src="images/logo.png"></a>
                 </div>
             </div>
 
@@ -36,31 +36,57 @@
     <div class="container content donate">
 
         <h1>Help Save Cinema</h1>
-        <p>Every Donation Helps</p>
+        <p>Every donation helps preserve America's film history. Your donation will go towards acquiring new film reels, restoring damaged films, restoring our landmark theater locations, and presenting our collection to the public.</p>
 
         <div class="form">
-        <form>
-            <label for="country">Amount</label>
-            <select id="amount" name="amount">
-                <option value="5">$5</option>
-                <option value="10">$10</option>
-                <option value="20">$20</option>
-                <option value="50">$50</option>
-                <option value="custom">Custom</option>
-            </select>
-            <label for="cust">Custom</label>
-            <input type="text" id="cust" name="cust" placeholder="Custom amount...">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="The name on your credit card...">
-            <label for="cc">Credit Card</label>
-            <input type="text" id="cc" name="cc" placeholder="**** **** **** ****">
-            <label for="exp">Expiration</label>
-            <input type="text" id="exp" name="exp" placeholder="MM/YY">
-            <input type="submit" value="Submit">
+        <form id="donationform">
+            <div class="floater-section medium-width-50">
+                <label for="country">Amount</label>
+                <select id="amount" name="amount">
+                    <option value="5">$5</option>
+                    <option value="10">$10</option>
+                    <option value="20">$20</option>
+                    <option value="50">$50</option>
+                    <option value="custom">Custom</option>
+                </select>
+                <div class="custom">
+                    <label for="cust">Custom (in USD)</label>
+                    <div class="textbox">
+                        <input type="text" id="cust" name="cust" placeholder="Custom amount...">
+                    </div>
+                </div>
+                <label for="name">Your Name</label>
+                <div class="textbox">
+                    <input type="text" id="name" name="name" placeholder="As it appears on your credit card...">
+                </div>
+            </div>
+            <div class="floater-section medium-width-50">
+                <label for="cc">Credit Card</label>
+                <div class="cctextbox">
+                    <input type="text" id="cc1" class="cc" name="cc" maxlength="4" placeholder="****"><input type="text" id="cc2" class="cc" name="cc" maxlength="4" placeholder="****"><input type="text" id="cc3" class="cc" name="cc" maxlength="4" placeholder="****"><input type="text" id="cc4" class="cc" name="cc" maxlength="4" placeholder="****">
+                </div>
+                <div class="exp floater-section">
+                    <label for="exp">Expiration</label>
+                    <div class="textbox">
+                        <input type="text" class="exptext" name="exp" maxlength="2" placeholder="MM"> / <input type="text" class="exptext" name="exp" maxlength="2" placeholder="YY">
+                    </div>
+                </div>
+                <div class="cvv floater-section">
+                    <label for="cvv">CVV</label>
+                    <div class="textbox">
+                        <input type="text" id="cvv" name="cvv" maxlength="3" placeholder="***">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="donatebuttons">
+                <input type="reset" id="reset" value="Reset">
+                <input type="submit" id="submit" value="Submit">
+            </div>
         </form>
         </div>
 
-        <div class="thankyou">
+        <div id="thankyou">
             <h1>
                 Thank you for helping!
             </h1>
@@ -77,6 +103,27 @@
         $('ul').toggleClass('opening');
         $(this).toggleClass('open');
 
+        })
+
+        $('#amount').change(function(){
+                var selection = $(this).val();
+
+                if(selection === 'custom'){
+                    $('.custom').slideDown();
+                }else if(selection != 'custom'){
+                    $('.custom').slideUp();
+                }
+            })
+
+        $('submit').click(function(){
+                $('#donationform').hide();
+                $('#thankyou').show();
+            })
+
+        $('#cc1').focus(function(){
+            if($('#cc1').val().length === 4 ){
+                $('#cc1').focus('#cc2');
+            }
         })
     </script>
 

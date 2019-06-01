@@ -1,6 +1,5 @@
 .floater-section {
     float: left;
-    width: 90%;
     position: relative;
 }
 
@@ -10,7 +9,7 @@
 
 body {
     background-color: #260947;
-    margin: -8px 0 0 -8px;
+    margin: -8px 0 0 0;
     color: white;
     font-family: 'raleway', sans-serif;
     font-size: 14px;
@@ -18,7 +17,13 @@ body {
 }
 
 .container {
+    width: 350px;
     margin: 0 auto;
+}
+
+.container p {
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .base-width-25 {
