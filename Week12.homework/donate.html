@@ -81,7 +81,7 @@
             <br>
             <div class="donatebuttons">
                 <input type="reset" id="reset" value="Reset">
-                <input type="submit" id="submit" value="Submit">
+                <input type="button" id="submit" value="Submit">
             </div>
         </form>
         </div>
@@ -91,7 +91,7 @@
                 Thank you for helping!
             </h1>
             <p>
-                Your donation will go towards preserving and expanding our film collection for future generations to enjoy.
+                Your donation will help build and preserve our film collection for future generations to enjoy.
             </p>
         </div>
 
@@ -99,31 +99,35 @@
     
     <script>
         $('.menu-toggle').click(function() {
-
-        $('ul').toggleClass('opening');
-        $(this).toggleClass('open');
-
+            $('ul').toggleClass('opening');
+            $(this).toggleClass('open');
         })
 
         $('#amount').change(function(){
-                var selection = $(this).val();
+            var selection = $(this).val();
 
-                if(selection === 'custom'){
-                    $('.custom').slideDown();
-                }else if(selection != 'custom'){
-                    $('.custom').slideUp();
-                }
-            })
+            if(selection === 'custom'){
+                $('.custom').slideDown();
+            }else if(selection != 'custom'){
+                $('.custom').slideUp();
+            }
+        })
 
-        $('submit').click(function(){
+        $('#submit').click(function(){
                 $('#donationform').hide();
                 $('#thankyou').show();
-            })
+        })
 
-        $('#cc1').focus(function(){
-            if($('#cc1').val().length === 4 ){
-                $('#cc1').focus('#cc2');
-            }
+        $('.cc').keyup(function(){
+            if(this.value.length == this.maxLength) {
+                $(this).next('.cc').focus();
+        }
+        })
+
+        $('.exptext').keyup(function(){
+            if(this.value.length == this.maxLength) {
+                $(this).next('.exptext').focus();
+        }
         })
     </script>
 

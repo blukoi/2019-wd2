@@ -6,19 +6,23 @@
 .heading {
     z-index: 99;
     background-color: #260947;
-    padding: 10px 0 0 15px;
-    margin-top: 5px;
+    padding: 15px 0 0 15px;
+    margin-top: 0;
 }
 
 .heading img {
     width: 100%;
     max-width: 50px;
     height: auto;
-    margin: 0 0 10px 5px;
+    margin: 10px 0 10px 5px;
 }
 
 .heading .logo {
     float: left;
+}
+
+.heading a :hover, .heading a :focus {
+    background-color: rgba(255,255,255,.10);
 }
 
 .welcome {
@@ -30,6 +34,7 @@
     width: 100%;
     height: 100px;
     text-align: center;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 
 .welcome h1 {
@@ -65,6 +70,11 @@
     font-size: 20px;
     text-decoration: none;
     border: none;
+}
+
+.welcome-donate .button:hover {
+    background: rgb(185, 185, 185);
+    color: rgb(85, 14, 167);
 }
 
 .content h1 {
@@ -221,11 +231,10 @@ nav a:hover, nav a:focus {
 .header {
     display: flex;
     flex-direction: row;
-    height: 50px;
 }
 
 .heading {
-    padding: 0 0 0 0;
+    padding: 10px 10px 0 0;
 }
 
 .menu-toggle {
@@ -261,11 +270,13 @@ nav a:hover,  nav a:focus {
 }
     
 nav {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     text-align: center;
     background-color: #260947;
+    padding: 5px 0 0 0;
 }
     
 }
@@ -290,7 +301,7 @@ label {
     display: inline-block;
 }
   
-input[type=submit] {
+input[type=button] {
     background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
@@ -301,7 +312,7 @@ input[type=submit] {
     margin-top: 15px;
 }
   
-input[type=submit]:hover {
+input[type=button]:hover {
     background-color: #45a049;
     color: black;
 }
@@ -401,9 +412,6 @@ input[type=reset]:hover {
     float: left;
     width: 100%;
     text-align: center;
-}
-
-.about-main {
 }
 
 .about p {
