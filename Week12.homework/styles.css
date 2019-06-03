@@ -25,13 +25,20 @@
     background-color: rgba(255,255,255,.10);
 }
 
-.welcome {
-    position: fixed;
-    z-index: 90;
-    left: 50%;
-    top: 75px;
-    margin: 0 0 0 -50%;
+.carousel {
+    padding-left: -70px;
+}
+
+.carousel-home {
+    margin-bottom: 25px;
+}
+
+.slides img {
     width: 100%;
+}
+
+.welcome {
+    z-index: 90;
     height: 100px;
     text-align: center;
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
@@ -49,18 +56,22 @@
     margin-top: -22px;
 }
 
-.welcome-donate {
-    width: 150px;
+.show-med {
+    display: none;
+}
+
+.home-buttons {
+    width: 300px;
     height: 40px;
     position: fixed;
     z-index: 90;
     left: 50%;
     top: 90%;
-    margin: -20px 0 0 -75px;
+    margin: -20px 0 0 -150px;
     text-align: center;
 }
 
-.welcome-donate .button {
+.home-buttons .home-donate, .home-tickets {
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.226);
     color: rgb(63, 10, 124);
@@ -72,7 +83,7 @@
     border: none;
 }
 
-.welcome-donate .button:hover {
+.home-buttons a:hover{
     background: rgb(185, 185, 185);
     color: rgb(85, 14, 167);
 }
@@ -301,7 +312,7 @@ label {
     display: inline-block;
 }
   
-input[type=button] {
+input[type=submit] {
     background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
@@ -312,7 +323,7 @@ input[type=button] {
     margin-top: 15px;
 }
   
-input[type=button]:hover {
+input[type=submit]:hover {
     background-color: #45a049;
     color: black;
 }
@@ -375,8 +386,25 @@ input[type=reset]:hover {
     float: left;
 }
 
+.about-img {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    background-color: rgb(114, 114, 114);
+}
+
+.about-img img {
+    margin-top: -40px;
+    max-width: 100%;
+    transform: rotate(3deg) scale(1.1);
+}
+
+.about-blurb {
+    float: left;
+    margin: 15px -1px;
+}
+
 .egyptian {
-    height: 50px;
     padding: 3px 0 0 0;
     margin: 0 auto;
     background-color: #4c1091;
@@ -384,15 +412,32 @@ input[type=reset]:hover {
 }
 
 .aero {
-    height: 50px;
     padding: 3px 0 0 0;
     margin: 0 auto;
     background-color: #4c1091;
+    margin-bottom: 15px;
 }
 
-.about-selector div:hover {
+.about-selectors {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+
+.note {
+    margin: 15px 0;
+}
+
+.about-selectors div:hover {
     background-color: #8b47da;
     color: black;
+}
+
+.about-selector {
+    height: 50px;
+    text-align: center;
+    border: 1px solid white;
+    margin: 0 -1px;
 }
 
 .note {
@@ -402,18 +447,146 @@ input[type=reset]:hover {
     letter-spacing: .25em;
     line-height: 18px;
     padding: 5px 0;
+    opacity: .5;
 }
 
 .theater-info {
     float: left;
 }
 
-.about-selector {
-    float: left;
-    width: 100%;
-    text-align: center;
+.hidden-about {
+    margin: 15px 0;
 }
 
-.about p {
+.hidden-info {
+    display: none;
     float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hidden-info img {
+    max-width: 100%;
+}
+
+.hidden-about a {
+    color: white;
+}
+
+.egyptiantheater {
+    display: none;
+}
+
+.aerotheater {
+    display: none;
+}
+
+.thumbnail {
+    height: 75px;
+    overflow: hidden;
+}
+
+.thumbnail img {
+    max-width: 100%;
+    float: left;
+    border: 10px solid rgb(38, 9, 71, 0);
+    filter: grayscale(100%);
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: -5px;
+}
+
+.gallery-display {
+    width: 100%;
+}
+
+.gallery-show {
+    width: 100%;
+}
+
+.gallery-show img {
+    max-width: 100%;
+}
+
+/**********SMALL SCREEN**********/
+@media(min-width: 450px) {
+
+}
+
+/**********MEDIUM SCREEN**********/
+@media(min-width: 768px) {
+
+    .carousel-home {
+        display: flex;
+        margin-top: 25px;
+    }
+
+    .carousel {
+        order: 1;
+        padding: 10px;
+    }
+
+    .welcome {
+        order: 2;
+        text-align: left;
+        height: 100%;
+        margin-top: -25px;
+        background: white;
+        color: #260947;
+        text-shadow: 0 3px 1px rgba(0, 0, 0, 0.178);
+    }
+
+    .welcome h1 {
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .welcome p {
+        text-align: left;
+        margin-left: 10px;
+        margin-top: -10px;
+        margin-bottom: 30px;
+    }
+
+    .show-med {
+        display: block;
+        order: 3;
+        background: #260947;
+        color: white;
+        padding: 10px 0;
+    }
+
+    .show-med p {
+        margin: 5px 10px;
+    }
+
+    .show-med p:nth-child(2) {
+        margin-top: 15px;
+    }
+
+    .home-buttons {
+        left: 90%;
+        order: 4;
+        margin: -20px 0 0 -205px;
+    }
+
+    .about-img {
+        height: 250px;
+    }
+
+    .about-img img {
+        margin-top: -100px;
+    }
+
+}
+
+/**********LARGE SCREEN**********/
+@media(min-width: 992px) {
+
 }

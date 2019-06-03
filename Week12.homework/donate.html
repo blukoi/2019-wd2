@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>American Cinematheque - About</title>
+    <title>American Cinematheque - Donate</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="layout.css">
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
@@ -81,7 +81,7 @@
             <br>
             <div class="donatebuttons">
                 <input type="reset" id="reset" value="Reset">
-                <input type="button" id="submit" value="Submit">
+                <input type="submit" id="submit" value="Submit">
             </div>
         </form>
         </div>
@@ -113,9 +113,10 @@
             }
         })
 
-        $('#submit').click(function(){
-                $('#donationform').hide();
-                $('#thankyou').show();
+        $('#donationform').submit(function(){
+            event.preventDefault();
+            $('#donationform').hide();
+            $('#thankyou').show();
         })
 
         $('.cc').keyup(function(){

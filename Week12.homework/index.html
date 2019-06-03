@@ -3,14 +3,16 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>American Cinematheque - About</title>
+    <title>American Cinematheque</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="layout.css">
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700|Raleway:400,400i,700,700i" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <link href="poposlides.css" rel="stylesheet" >
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="slippry.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="slippry.css" />
 </head>
 <body>
     <div class="header container">
@@ -34,48 +36,73 @@
         </nav>
     </div>
 
-    <div class="slides-main">
-        <div class="slides-box">
-            <ul class="slides">
-                <li style="background: url('http://www.impawards.com/1999/posters/tarzan_ver1_xxlg.jpg') center"></li>
-                <li style="background: url('http://www.impawards.com/2001/posters/memento_xxlg.jpg') center"></li>
-                <li style="background: url('http://www.impawards.com/2008/posters/dark_knight_ver4_xxlg.jpg') center"></li>
-                <li style="background: url('http://www.impawards.com/1984/posters/amadeus_ver1_xxlg.jpg') center"></li>
-                <li style="background: url('http://www.impawards.com/1988/posters/rain_man_xxlg.jpg') center"></li>
-            </ul>
-        </div>
-    </div>
+    <div class="carousel-home container content">
 
-    <div class="container content">
-        <div class="welcome">
+        <div class="welcome medium-width-50">
             <h1>American Cinematheque</h1>
-            <p>Preserving American Cinema</p>
+            <p>Preserving Cinema</p>
+
+            <div class="show-med">
+                <p>In the early days of film nothing was certain and film itself was fragile and easily damaged. Whether to age or the elements it wasn't unusual for a film to be lost. The Library of Congress has estimated that 75% of all silent films may be lost, including many works by the well-renowned likes of Georges Méliès and Alice Guy. That's a lot of history.</p>
+                <p>American Cinematheque is a group of filmmakers, writers, actors, and other industry members who want nothing more than to see the beauty of our film industry and history preserved so that it can be enjoyed by future generations.</p>
+            </div>
         </div>
 
-        <div class="welcome-donate">
-            <a href="donate.html" class="button" title="Donate">Donate</a>
+        <div class="carousel medium-width-50">
+
+            <ul id="slides">
+                <li>
+                    <p><strong>Tarzan</strong></p>
+                    <p>Egyptian Theater</p>
+                    <p>June 9 at 6pm</p>
+                    <img src="http://www.impawards.com/1999/posters/tarzan_ver1_xxlg.jpg" alt="Tarzan">
+                </li>
+                <li>
+                    <p><strong>Memento and Q&A</strong></p>
+                    <p>Aero Theater</p>
+                    <p>June 12 at 3pm</p>
+                    <img src="http://www.impawards.com/2001/posters/memento_xxlg.jpg" alt="Memento">
+                </li>
+                <li>
+                    <p><strong>The Dark Knight</strong></p>
+                    <p>Egyptian Theater</p>
+                    <p>June 12 at 6pm</p>
+                    <img src="http://www.impawards.com/2008/posters/dark_knight_ver4_xxlg.jpg" alt="The Dark Knight">
+                </li>
+                <li>
+                    <p><strong>Amadeus</strong></p>
+                    <p>Aero Theater</p>
+                    <p>June 16 at 7pm</p>
+                    <img src="http://www.impawards.com/1984/posters/amadeus_ver1_xxlg.jpg" alt="Amadeus">
+                </li>
+                <li>
+                    <p><strong>Rain Main and Q&A</strong></p>
+                    <p>Egyptian Theater</p>
+                    <p>June 17 at 6pm</p>
+                    <img src="http://www.impawards.com/1988/posters/rain_man_xxlg.jpg" alt="Rain Man">
+                </li>
+            </ul>
+
         </div>
+
+        <div class="home-buttons">
+            <a href="#" class="home-tickets" title="Tickets">Tickets</a>
+            <a href="donate.html" class="home-donate" title="Donate">Donate</a>
+        </div>
+
     </div>
     
-    <script src="poposlides.js"></script> 
     <script>
         $('.menu-toggle').click(function() {
-
-        $('ul').toggleClass('opening');
-        $(this).toggleClass('open');
-
+            $('ul').toggleClass('opening');
+            $(this).toggleClass('open');
         })
-
-        $(".slides").poposlides({
-            auto:true,
-            nav:true,
-            playspeed:3500,
-            fadespeed:500,
-            loop:true,
-            pagination:false,
-            pagecenter:true,
-            prev:".prev",
-            next:".next"
+        
+        jQuery(document).ready(function(){
+            jQuery('#slides').slippry({
+                elements: 'li',
+                captions: false,
+            });
         });
     </script>
 
