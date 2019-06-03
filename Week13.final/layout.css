@@ -1,0 +1,160 @@
+.floater-section {
+    float: left;
+    position: relative;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+body {
+    background-color: #260947;
+    margin: -8px 0 0 0;
+    color: white;
+    font-family: 'raleway', sans-serif;
+    font-size: 14px;
+    letter-spacing: .1em;
+}
+
+.container {
+    width: 350px;
+    margin: 0 auto;
+}
+
+.container p {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.base-width-25 {
+    width: 25%;
+}
+
+.base-width-33 {
+    width: 33.3333%;
+}
+
+.base-width-50 {
+    width: 50%;
+}
+
+.base-width-66 {
+    width: 66.6666%;
+}
+
+.base-width-75 {
+    width: 75%;
+}
+
+.base-width-100 {
+    width: 100%;
+}
+
+/**********SMALL SCREEN**********/
+@media(min-width: 450px) {
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .container {
+        width: 430px;
+        margin: 0 auto;
+    }
+
+    .small-width-25 {
+        width: 25%;
+    }
+
+    .small-width-33 {
+        width: 33.3333%;
+    }
+    
+    .small-width-50 {
+        width: 50%;
+    }
+
+    .small-width-66 {
+        width: 66.6666%;
+    }
+
+    .small-width-75 {
+        width: 75%;
+    }
+
+    .small-width-100 {
+        width: 100%;
+    }
+}
+
+/**********MEDIUM SCREEN**********/
+@media(min-width: 768px) {
+    body {
+        margin: 0 auto;
+    }
+
+    .container {
+        width: 750px;
+        margin: 0 auto;
+    }
+
+    .medium-width-25 {
+        width: 25%;
+    }
+
+    .medium-width-33 {
+        width: 33.3333%;
+    }
+
+    .medium-width-50 {
+        width: 50%;
+    }
+
+    .medium-width-66 {
+        width: 66.6666%;
+    }
+
+    .medium-width-75 {
+        width: 75%;
+    }
+
+    .medium-width-100 {
+        width: 100%;
+    }
+}
+
+/**********LARGE SCREEN**********/
+@media(min-width: 992px) {
+    body {
+        margin: 0 auto;
+    }
+
+    .container {
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    .large-width-25 {
+        width: 25%;
+    }
+
+    .large-width-33 {
+        width: 33.3333%;
+    }
+
+    .large-width-50 {
+        width: 50%;
+    }
+
+    .large-width-66 {
+        width: 66.6666%;
+    }
+
+    .large-width-75 {
+        width: 75%;
+    }
+
+    .large-width-100 {
+        width: 100%;
+    }
+}
